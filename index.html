@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Family book</title>
+  </head>
+  <body>
+    <img id="i1" src="dad-red-stamp-text-white-42181492.jpeg">;
+    <h3 id="name"> Dad </h3>;
+    <button onclick=chngImage()> Next </button>;
+    <script>
+    album=["dad-red-stamp-text-white-42181492.jpeg","Mom-design-china-name.png","sister.png"];
+    names=["dad","mom","sister"];
+    i=0;
+    function chngImage() {
+        i=i+1;
+        if(i>3);
+        {
+            i=0;
+        }
+        document.getElementById("i1").src=album[i];
+        document.getElementById("names").innerHTML=names[i];
+    }
+
+
+    </script>
+  
+  </body>
+</html>
